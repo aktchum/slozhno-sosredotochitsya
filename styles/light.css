@@ -3,7 +3,7 @@
   --main-font-size: 18px;
   --theme-switch-color: #353430;
   --theme-switch-hover-color: rgba(50, 49, 45, 0.40);
-  --decorative-element-color: #353430;;
+  --decorative-element-color: #353430;
   --title-color: #FFC2E6; /* текст no focus */
   --title-shadow-color: #FF8DCB; /* тень no focus */
   --link-shadow-color: #FF8DCB; /* цвет тени ссылки */
@@ -33,7 +33,7 @@
     --main-font-size: 18px;
     --theme-switch-color: #353430;
     --theme-switch-hover-color: rgba(50, 49, 45, 0.40);
-    --decorative-element-color: #353430;;
+    --decorative-element-color: #353430;
     --title-color: #FFC2E6; /* текст no focus */
     --title-shadow-color: #FF8DCB; /* тень no focus */
     --link-shadow-color: #FF8DCB; /* цвет тени ссылки */
