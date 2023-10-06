@@ -1,7 +1,7 @@
 .page.theme_dark {
   --font-family: "IBM Plex Mono", monospace;
   --main-font-size: 18px;
-  --theme-switch-text-color: #FF0070;
+  --theme-switch-color: #FF0070;
   --theme-switch-hover-color: rgba(255, 0, 112, 0.40);
   --decorative-element-color: #FF0070;
   --title-color: #DB00FF; /* текст no focus */
@@ -14,4 +14,8 @@
   --main-text-color: #F1B2CE;
   --main-background-color: #000028;
   --background-image: url("../images/cover-image-dark.png");
+}
+
+.theme_dark .header__decorative-element {
+  display: block;
 }

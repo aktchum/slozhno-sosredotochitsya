@@ -25,7 +25,6 @@
     text-shadow: 4px 4px 0px #FF0070;
   }
 }
-    
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -44,5 +43,15 @@
     --main-text-color: #353430;
     --main-background-color: #FFEDF5;
     --background-image: url("../images/cover-image-light.png");
+  }
+  
+  .header__decorative-element {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .main-title {
+      text-shadow: 4px 4px 0px #FF0070;
+    }
   }
 }
