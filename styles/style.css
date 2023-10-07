@@ -105,7 +105,7 @@
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 82.5%;
+  line-height: 0.825;
   text-shadow: 4px 4px 0px var(--accent-color);
 }
 
@@ -118,7 +118,7 @@
   color: var(--paragraph-title-color);
   font-weight: 700;
   font-size: var(--main-font-size);
-  line-height: 130%;
+  line-height: 1.3;
   white-space: pre-line;
 }
 
@@ -152,14 +152,14 @@
 }
 
 /* стилизация секции 1 "почему сложно сосредоточиться" */
-.section-1 {
+.hard-concentrate {
   margin-block-start: 40px;
 }
 
 /* стилизация секции 4 "галерея изображений" */
 .image-gallery__image {
   display: block;
-  width: 100%;
+  inline-size: 100%;
   margin-block-start: 10px;
 }
 
@@ -264,7 +264,7 @@
     padding: 0 20px 0;
   }
 
-  .section-1 {
+  .hard-concentrate {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
@@ -272,36 +272,36 @@
     margin-block-start: 60px;
   }
 
-  .section-1 > :first-child {
+  .hard-concentrate > :first-child {
     grid-row: 1 / span 2;
   }
 
-  .section-1 > :not(:first-child) {
+  .hard-concentrate > :not(:first-child) {
     grid-column: 2;
   }
 
-  .section-2 {
+  .reduce-concentration {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .section-2 > :first-child {
+  .reduce-concentration > :first-child {
     grid-column: 1;
   }
 
-  .section-2 > :not(:first-child) {
+  .reduce-concentration > :not(:first-child) {
     grid-column: 1 / span 3;
   }
 
-  .section-3 {
+  .how-concentrate {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     gap: 20px;
   }
-  
-  .section-3 > :first-child {
+
+  .how-concentrate > :first-child {
     grid-row: 1 / span 6;
   }
 
@@ -312,8 +312,7 @@
   }
 
   .image-gallery__image {
-    width: 100%;
-    height: 100%;
+    block-size: 100%;
     margin-block-start: 0;
     object-fit: cover;
   }
@@ -372,26 +371,26 @@
   }
 
   /* cтилизация main*/
-  .section-1 {
+  .hard-concentrate {
     column-gap: 10px;
   }
 
-  .section-2 {
+  .reduce-concentration {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
     gap: 20px;
   }
 
-  .section-2 > :first-child {
+  .reduce-concentration > :first-child {
     grid-column: 1 / -1;
     max-inline-size: 314px;
   }
 
-  .section-2 > :not(:first-child) {
+  .reduce-concentration > :not(:first-child) {
     grid-column: auto;
   }
 
-  .section-3 {
+  .how-concentrate {
     column-gap: 10px;
   }
 }
